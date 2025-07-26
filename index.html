@@ -10,34 +10,43 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
     <title>Frontend Mentor | Password generator app</title>
   </head>
   <body>
+    <header>
+      <h1 class="title">Password Generator</h1>
+    </header>
     <main>
-      <h1>Password Generator</h1>
-      <p class="card">P4$5W0rD!</p>
+      <div class="card flex-h">
+        <p id="result">P4$5W0rD!</p>
+        <p>c/p</p>
+      </div>
+
       <form class="card">
         <div>
           <label for=""> Character Length </label>
           <input type="number" />
         </div>
-        <div>
-          <input type="radio" id="include-uppercase" />
-          <label for="include-uppercase">Include Uppercase Letters</label>
-        </div>
-        <div>
-          <input type="radio" id="include-lowercase" />
-          <label for="include-lowercase">Include Lowercase Letters</label>
-        </div>
-        <div>
-          <input type="radio" id="include-uppercase" />
-          <label for="include-uppercase">Include Numbers</label>
-        </div>
-        <div>
-          <input type="radio" id="include-symbols" />
-          <label for="include-symbols">Include Symbols</label>
+        <div class="radio-inputs-container">
+          <div class="radio-input-container">
+            <input type="radio" id="include-uppercase" />
+            <label for="include-uppercase">Include Uppercase Letters</label>
+          </div>
+          <div class="radio-input-container">
+            <input type="radio" id="include-lowercase" />
+            <label for="include-lowercase">Include Lowercase Letters</label>
+          </div>
+          <div class="radio-input-container">
+            <input type="radio" id="include-numbers" />
+            <label for="include-uppercase">Include Numbers</label>
+          </div>
+          <div class="radio-input-container">
+            <input type="radio" id="include-symbols" />
+            <label for="include-symbols">Include Symbols</label>
+          </div>
         </div>
         <div>Strength</div>
         <button>Generate</button>

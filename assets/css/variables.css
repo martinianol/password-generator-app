@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Italic_VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 :root {
   /* Colors */
   --color-white: #fff;
@@ -40,15 +54,4 @@
   --spacing-2000: 10rem; /* 160px */
   --spacing-2200: 11rem; /* 176px */
   --spacing-2300: 11.5rem; /* 184px */
-}
-
-body {
-  background-color: var(--color-grey-950);
-  font: var(--text-preset-1);
-  color: var(--color-white);
-}
-
-.card {
-  background: var(--color-grey-850);
-  padding: var(--spacing-200);
 }
