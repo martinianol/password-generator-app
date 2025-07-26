@@ -1,0 +1,54 @@
+:root {
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey-950: #08070b;
+  --color-grey-900: #14131b;
+  --color-grey-850: #18171f;
+  --color-grey-800: #24232c;
+  --color-grey-700: #54535b;
+  --color-grey-600: #817d92;
+  --color-grey-200: #e6e5ea;
+  --color-green-200: #a4ffaf;
+  --color-yellow-300: #f8cd65;
+  --color-orange-400: #fb7c58;
+  --color-red-500: #fb7c58;
+
+  --gradient-1: linear-gradient(
+    180deg,
+    var(--color-grey-900) 0%,
+    var(--color-grey-950) 100%
+  );
+
+  /* Typography */
+  --font-family: "JetBrains Mono", monospace;
+  --text-preset-1: 700 2rem/2.625rem var(--font-family);
+  --text-preset-2: 700 1.5rem/2rem var(--font-family);
+  --text-preset-3: 700 1.125rem/1.5rem var(--font-family);
+  --text-preset-4: 700 1rem/1.25rem var(--font-family);
+
+  /* Spacing */
+  /* Spacing scale from Figma */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-1000: 5rem; /* 80px */
+  --spacing-1300: 6.5rem; /* 104px */
+  --spacing-1600: 8rem; /* 128px */
+  --spacing-2000: 10rem; /* 160px */
+  --spacing-2200: 11rem; /* 176px */
+  --spacing-2300: 11.5rem; /* 184px */
+}
+
+body {
+  background-color: var(--color-grey-950);
+  font: var(--text-preset-1);
+  color: var(--color-white);
+}
+
+.card {
+  background: var(--color-grey-850);
+  padding: var(--spacing-200);
+}

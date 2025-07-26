@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Password generator app</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  Password Generator
-
-  P4$5W0rD!
-
-  Character Length
-
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
-
-  Strength
-
-  Generate
-
-</body>
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <p class="card">P4$5W0rD!</p>
+      <form class="card">
+        <div>
+          <label for=""> Character Length </label>
+          <input type="number" />
+        </div>
+        <div>
+          <input type="radio" id="include-uppercase" />
+          <label for="include-uppercase">Include Uppercase Letters</label>
+        </div>
+        <div>
+          <input type="radio" id="include-lowercase" />
+          <label for="include-lowercase">Include Lowercase Letters</label>
+        </div>
+        <div>
+          <input type="radio" id="include-uppercase" />
+          <label for="include-uppercase">Include Numbers</label>
+        </div>
+        <div>
+          <input type="radio" id="include-symbols" />
+          <label for="include-symbols">Include Symbols</label>
+        </div>
+        <div>Strength</div>
+        <button>Generate</button>
+      </form>
+    </main>
+  </body>
 </html>
